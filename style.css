@@ -15,18 +15,17 @@ body {
 }
 
 span {
-    padding: 20px;
-    border: 2px solid #666;
+    padding: 10px;
+    /* border: 2px solid #666; */
+}
+
+i {
+    padding: 10px;
 }
 
 h1 {
     padding: 20px;
 }
-
-/* .d-flex {
-    align-content: center;
-    align-items: center;
-} */
 
 .hintHead {
     color: white;
@@ -37,20 +36,23 @@ h1 {
     padding: 0px;
 }
 
-
 .currentWord {
     padding: 20px 20px 5px 20px;
 }
 
 .numGuesses {
     padding: 15px;
+    border: 2px solid #666;
 }
 
 .letGuesses {
     padding: 20px 20px 5px 20px;
+    letter-spacing: 1.5em;
+    word-wrap: break-word;
 }
 
 .numWins {
     padding: 15px;
+    border: 2px solid #666;
 }
 
