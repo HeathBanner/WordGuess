@@ -88,7 +88,7 @@ document.onkeyup = function (event) {
         guessCount.textContent = numGuesses;
     } // Notifies the user they've lost then refreshes the page
     if (numGuesses === 0) {
-        var conf = confirm("You've ran out of guesses! Press 'ok' to restart.")
+        var conf = confirm("You've run out of guesses! Press 'ok' to restart.")
         window.location.reload(false); 
     }
     // Triggers the next level once the user has guessed all letters
