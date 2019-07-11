@@ -40,6 +40,14 @@ hintUpdate.textContent = hint;
 // Logs the test counter
 testCounter = storage[storageIndex].w.length;
 
+const modal = document.getElementById('close');
+
+const closeModal = (e) => {
+    document.getElementById('modal').remove();
+}
+
+modal.onclick = closeModal
+
 // Listens for keys pressed
 document.onkeyup = function (event) {
     userGuess = event.key.toLowerCase();
@@ -80,7 +88,7 @@ document.onkeyup = function (event) {
         guessCount.textContent = numGuesses;
     } // Notifies the user they've lost then refreshes the page
     if (numGuesses === 0) {
-        var conf = confirm("You ran out of guesses! Press 'ok' to restart.")
+        var conf = confirm("You've ran out of guesses! Press 'ok' to restart.")
         window.location.reload(false); 
     }
     // Triggers the next level once the user has guessed all letters

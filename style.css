@@ -4,19 +4,43 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
-.header {
-    margin: 50px;
+#modal {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #FE6B9B 30%, #FF8E53 90%);
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+
+#modal i {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+#modal i:hover {
+    color: #513bdb;
+}
+
+.centerControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main {
+    height: 80%;
     background: #fff;
-    height: 100%;
+    border-radius: 4px;
     padding-bottom: 30px;
 }
 
 span {
     padding: 10px;
-    /* border: 2px solid #666; */
 }
 
 i {
@@ -43,6 +67,7 @@ h1 {
 .numGuesses {
     padding: 15px;
     border: 2px solid #666;
+    border-radius: 4px;
 }
 
 .letGuesses {
@@ -54,5 +79,6 @@ h1 {
 .numWins {
     padding: 15px;
     border: 2px solid #666;
+    border-radius: 4px;
 }
 

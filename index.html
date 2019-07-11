@@ -4,70 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <link type="text" href="logic.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+    
     <title>Word Guess</title>
+
 </head>
+
 <body background="imgs/bw.png">
+
+    <div id="modal">
+        <i onclick="logic.closeModel(this)" id="close" class="fas fa-2x fa-times"></i>
+        <h1>Guess a letter by pressing a key on your keyboard!</h1>
+    </div>
+
     <div class="container" id="page">
-       <div class="row">
-           <div class="col-xl-12 header">
-           </div>
-        </div>
-        <div class="row">
+        <div class="row centerControl">
             <div class="col-xl-3 col-lg-4">
                 <div class="row">
+
                     <div class="col-xl-12 col-lg-12">
                         <h4 class="hintHead">Hint</h4>
                     </div>
+
                 </div>
+
                 <div class="row">
+
                     <div class="col-xl-12 col-lg-12">
                         <p class="hintBody" id="hintBody">hint text goes here</p>
                     </div>
+
                 </div>
             </div>
+
             <div class="col-xl-6 col-lg-4 main">
-                    <div class="row">
+                <div class="row">
+
                     <div class="col-xl-12">
                         <h1>Level</h1>
                         <span class="numWins" id="level">1</span>
                     </div>
+
                     </div>
+                    
                     <div class="row">
+
                         <div class="col-xl-12">
                             <h1>Current Word</h1>
                             <span id="test"></span>
                         </div>
+
                     </div>
+
                     <div class="row">
+
                         <div class="col-xl-12">
                             <h1>Number of Guesses</h1>
                             <span class="numGuesses" id="guessCount">10</span>
                         </div>
+
                     </div>
+
                     <div class="row">
+
                         <div class="col-xl-12">
                             <h1>Letters Guessed</h1>
                             <div class="letGuesses" id="guessedLetters"></div>
                         </div>
+
                     </div>
-                
-            </div>
+                </div>
             <div class="col-xl-3 col-lg-4"></div>
         </div>
         
     </div>
-   
-   
-   
-   
-
-
+ 
     <script src="logic.js"></script>
 
 </body>
